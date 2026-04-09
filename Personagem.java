@@ -14,7 +14,7 @@ public class Personagem {
     Personagem(String nome) {
         System.out.println("Construindo novo personagem");
         this.nome = nome;
-        energia = 10;
+        energia = 2;
         fome = 0;
         sono = 0;
         mochila = new ArrayList<>();
@@ -94,6 +94,9 @@ public class Personagem {
                     mochila.add("garra");        
                     break;        
             }
+    }
+    boolean estaMorto(){
+        return energia<=0;
     }
 
     public String toString() {

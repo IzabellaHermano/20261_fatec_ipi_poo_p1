@@ -10,7 +10,8 @@ public class Jogo {
         while (true) { 
             var oQueFazer = gerador.nextInt(1,4);
 
-            switch (oQueFazer) {
+            if(!personagem01.estaMorto()){
+                switch (oQueFazer) {
                 case 1:
                     personagem01.cacar();
                     break;
@@ -20,7 +21,11 @@ public class Jogo {
                 case 3:
                     personagem01.dormir();        
                     break;
+                }
+            }else{
+                System.out.println("game over!");
             }
+
 
             System.out.println(personagem01);
             Thread.sleep(5000);
