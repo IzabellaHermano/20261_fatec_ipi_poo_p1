@@ -1,0 +1,16 @@
+public class Musica {
+    private String titulo;
+
+    Musica(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("t: %s", titulo);
+    }   
+}
