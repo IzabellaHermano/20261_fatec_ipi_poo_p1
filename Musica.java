@@ -1,4 +1,5 @@
 public class Musica {
+
     private String titulo;
 
     Musica(String titulo) {
@@ -11,6 +12,6 @@ public class Musica {
 
     @Override
     public String toString() {
-        return String.format("t: %s", titulo);
+        return String.format("%s", titulo);
     }   
 }
