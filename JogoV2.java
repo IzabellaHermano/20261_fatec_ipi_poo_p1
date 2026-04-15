@@ -22,7 +22,7 @@ public class JogoV2 {
         musicas.add(new Musica("Cool for the summer"));
         musicas.add(new Musica("Abracadabra"));
         musicas.add(new Musica("Bring me to life"));
-        musicas.add(new Musica("I whish you roses"));
+        musicas.add(new Musica("I wish you roses"));
         musicas.add(new Musica("Back in black"));
 
         boolean campeao = false;
