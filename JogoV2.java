@@ -7,8 +7,8 @@ public class JogoV2 {
     public static void main(String[] args) throws Exception {
         var gerador = new Random();
 
-        var personagem01 = new Personagem("Arlequina Assassina");
-        var personagem02 = new Personagem("Tico Trovador", 3, 8, 8);
+        var personagem01 = new Cacador("Arlequina Assassina");
+        var personagem02 = new Bardo("Tico Trovador", 3, 8, 8);
         personagem02.addMusicaAutoral(new Musica("Thriller do Trovador"));
 
         ArrayList<Musica> musicas = new ArrayList<>();

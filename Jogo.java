@@ -32,7 +32,7 @@ public class Jogo {
 
         do {
             if (!personagem01.estaMorto()) {
-                var oQueFazer = gerador.nextInt(1, 4);
+                var oQueFazer = gerador.nextInt(1, 5);
 
                 switch (oQueFazer) {
                     case 1:
@@ -44,8 +44,10 @@ public class Jogo {
                     case 3:
                         personagem01.dormir();
                         break;
+                    case 4:
+                        personagem01.aprenderMusica(musicas);
+                        break;
                 }
-                personagem01.aprenderMusica(musicas);
                 System.out.println(personagem01);
             }
             
